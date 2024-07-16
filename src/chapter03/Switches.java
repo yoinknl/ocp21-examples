@@ -1,4 +1,4 @@
-import java.lang.management.MemoryType;
+package chapter03;//import java.lang.management.MemoryType;
 
 public class Switches {
 
@@ -38,16 +38,18 @@ public class Switches {
         System.out.println("Case: Not Hello");
         result = "2";
         break;
+//      case null:
+//        System.out.println("Case: null");
     }
 
 
-    MemoryType mtype = MemoryType.HEAP;
-
-
-    var val = switch (mtype) {
-      case HEAP -> "Het is de HEAP";
-      case NON_HEAP -> "Het is niet de HEAP";
-    };
+//    MemoryType mtype = MemoryType.HEAP;
+//
+//
+//    var val = switch (mtype) {
+//      case HEAP -> "Het is de HEAP";
+//      case NON_HEAP -> "Het is niet de HEAP";
+//    };
   }
 
 

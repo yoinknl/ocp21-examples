@@ -1,3 +1,5 @@
+package chapter02;
+
 public class ShiftOperators {
 
   public static void main(String[] args) {
@@ -8,21 +10,21 @@ public class ShiftOperators {
     printBinary(10 ^ 6);
 
 
-//    printBinary(1);
-//    printBinary(1 >> 4);
-//    printBinary(1 << 4);
-//    printBinary(100);
-//    printBinary(100 << 4);
-//    printBinary(100 >> 4);
-//
-//    printBinary(1);
-//    printBinary(1 >>> 4);
-//    printBinary(1 >>> 40);
-//
-//    printBinary(100);
-//    printBinary(-100);
-//    printBinary(-100 >> 4);
-//    printBinary(-100 >>> 4);
+    printBinary(1);
+    printBinary(1 >> 4);
+    printBinary(1 << 4);
+    printBinary(100);
+    printBinary(100 << 4);
+    printBinary(100 >> 4);
+
+    printBinary(1);
+    printBinary(1 >>> 4);
+    printBinary(1 >>> 40);
+
+    printBinary(100);
+    printBinary(-100);
+    printBinary(-100 >> 4);
+    printBinary(-100 >>> 4);
 
   }
 

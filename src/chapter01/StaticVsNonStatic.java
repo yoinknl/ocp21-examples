@@ -1,4 +1,6 @@
-public class MyApplication {
+package chapter01;
+
+public class StaticVsNonStatic {
 
   private static int mijnStaticWaarde = 4;
 
@@ -9,9 +11,9 @@ public class MyApplication {
     System.out.println("Static int: " + mijnStaticWaarde);
     System.out.println("Static int: " + myInstanceWaarde);
 
-    var myInstance = new MyApplication();
+    var myInstance = new StaticVsNonStatic();
 
-    var myInstance2 = new MyApplication();
+    var myInstance2 = new StaticVsNonStatic();
     myInstance2.myInstanceWaarde = 10_000_000;
 
     mijnStaticWaarde = 6;

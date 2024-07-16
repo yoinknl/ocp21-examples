@@ -1,3 +1,5 @@
+package chapter04;
+
 public class ImplicitStringBuilders {
 
   public static void main(String[] args) {

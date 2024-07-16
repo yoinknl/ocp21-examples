@@ -1,3 +1,5 @@
+package chapter05;
+
 public class VarArgs {
 
 

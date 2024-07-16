@@ -1,3 +1,5 @@
+package chapter04;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -42,7 +44,7 @@ public class PooledString {
       return new PooledString(ps1.s);
     });
 
-//    ps1 = new PooledString("Iets Anders");
+//    ps1 = new chapter04.PooledString("Iets Anders");
 
   }
 

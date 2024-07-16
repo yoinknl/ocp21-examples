@@ -1,4 +1,8 @@
-public class Arrays {
+package chapter04;
+
+import java.util.Arrays;
+
+public class ArraysExamples {
 
   public static void main(String[] args) {
 
@@ -34,6 +38,14 @@ public class Arrays {
      [0] = [ ]
      [1] = [ ][ ]
      */
+
+    int[][][] firstZero = new int[0][][];
+
+    int[] intsA = { 1, 2, 3 };
+    int[] intsB = { 1, 2, 3 };
+
+    System.out.println(intsA.equals(intsB));
+    System.out.println(Arrays.equals(intsA, intsB));
 
   }
 
