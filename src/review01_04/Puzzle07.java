@@ -11,6 +11,7 @@ public class Puzzle07 {
     };
 
     // Question: We want the nested loop to print the values 1-9 in order, what should we set maxFirstLoop, maxSecondLoop and leftOrRight to?
+    // Question 2: What needs to change if we want to print them in the order 1, 4, 7, 2, 5, 8, 3, 6, 9?
     var maxFirstLoop = 0;
     for (int a = 0; a < maxFirstLoop; a++) {
 
