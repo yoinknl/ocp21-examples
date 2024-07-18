@@ -1,5 +1,7 @@
 package chapter03;//import java.lang.management.MemoryType;
 
+import java.sql.SQLOutput;
+
 public class Switches {
 
   public enum Role {
@@ -55,7 +57,29 @@ public class Switches {
 
 
 
+  private void noWayInHell(String helpMe) {
 
+    // Yes we can, but please don't
+    switch( switch(helpMe) {
+      case "Hello" -> 4;
+      case "World" -> 5;
+      case "Niet Hello" -> 6;
+      default -> 0;
+    }) {
+      case 0:
+        System.out.println("OMG!");
+        break;
+      case 4:
+        System.out.println("WHY !?");
+        break;
+      case 5:
+        System.out.println("PLEASE DON'T !?");
+        break;
+      case 6:
+        System.out.println("三三ᕕ( ᐛ )ᕗ");
+    }
+
+  }
 
 
 

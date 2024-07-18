@@ -3,22 +3,21 @@ package review01_04;
 public class Puzzle07 {
   public static void main(String[] args) {
 
-
+    // TODO: Make one of the arrays a different length to force the use of ints[a].length
     int[][] ints = {
         { 1, 2, 3 },
-        { 4, 5, 6 },
-        { 7, 8, 9 },
+        { 4, 5, 6, 7 },
+        { 8, 9, 10 },
     };
 
-    // Question: We want the nested loop to print the values 1-9 in order, what should we set maxFirstLoop, maxSecondLoop and leftOrRight to?
-    // Question 2: What needs to change if we want to print them in the order 1, 4, 7, 2, 5, 8, 3, 6, 9?
-    var maxFirstLoop = 0;
+    // Question: We want the nested loop to print the values 1-10 in order, what should we set maxFirstLoop, maxSecondLoop and leftOrRight to?
+    var maxFirstLoop = ints.length;
     for (int a = 0; a < maxFirstLoop; a++) {
 
-      var maxSecondLoop = 0;
+      var maxSecondLoop = ints[a].length;
       for (int b = 0; b < maxSecondLoop; b++) {
 
-        var leftOrRight = false;
+        var leftOrRight = true;
         var item = leftOrRight ? ints[b][a] : ints[a][b];
 
         System.out.println(item);
@@ -27,6 +26,6 @@ public class Puzzle07 {
     }
 
     System.out.println("DONE!");
-
+    // Extra Question: What happens if we change leftOrRight?
   }
 }

@@ -9,7 +9,7 @@ public class Puzzle09 {
     do {
       a++;
       iterations++;
-    } while (a < 1);
+    } while (a < 0);
 
     // Question: What will the values be at this point?
     System.out.println("Phase 1:");

@@ -6,6 +6,7 @@ public class Puzzle05 {
 
   public static void main(String[] args) {
 
+    // Fun change: what happens is we change it to LinkedHashMap
     var legsPerAnimal = new HashMap<String, Integer>();
     legsPerAnimal.put("Monkey", 2);
     legsPerAnimal.put("Salmon", 0);

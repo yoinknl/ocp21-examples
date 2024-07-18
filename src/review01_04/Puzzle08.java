@@ -17,5 +17,6 @@ public class Puzzle08 {
     System.out.println(x == z);
     System.out.println(x.equals(z));
 
+    // Question 2 : What do we need to change to make x == z become true?
   }
 }

@@ -3,7 +3,7 @@ package review01_04;
 public class Puzzle10 {
   public static void main(String[] args) {
 
-    var a = 7;
+    var a = 10;
 
     if (a < 10)
     if (a > 5)

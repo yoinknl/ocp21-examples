@@ -6,6 +6,7 @@ public class Puzzle02 {
 
     var a = 10;
 
+    // Question: what will we print here?
     System.out.println( a++ * 2 >= --a * 2 ? a = 200 : a);
 
 
@@ -13,6 +14,7 @@ public class Puzzle02 {
 
     b += 10 * 3 << 2;
 
+    // Question: what will we print here?
     System.out.println(b);
 
 
