@@ -40,8 +40,12 @@ public class Switches {
         System.out.println("Case: Not Hello");
         result = "2";
         break;
+// In java 21 the following is possible, but adding a null-case also requires a default
 //      case null:
 //        System.out.println("Case: null");
+//        break;
+//      default:
+//        System.out.println("DEFAULT!");
     }
 
 

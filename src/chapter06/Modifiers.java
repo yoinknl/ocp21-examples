@@ -19,6 +19,20 @@ public abstract class Modifiers {
 
   static void m7() {}
 
+  private void m8() {
+  }
+
+  abstract class ExtendedModifiers extends Modifiers {
+
+    // @Override Nope, it doesn't override
+    private void m8() {
+    }
+
+  }
+
+  public static void main(String[] args) {
+
+  }
 
 
   /*
