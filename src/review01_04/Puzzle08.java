@@ -1,5 +1,10 @@
 package review01_04;
 
+/**
+ * Before running this Puzzle, look at the code and try to decide what it is going to print. Look for the comments that
+ * start with 'Question:' and try to answer those questions. Once you think you know the answer, run the application and
+ * see if you got it right.
+ */
 public class Puzzle08 {
   public static void main(String[] args) {
 
@@ -8,7 +13,7 @@ public class Puzzle08 {
 
     var z = y.intern().trim();
 
-    // What are the following outcomes?
+    // Question 1 : What are the following outcomes?
     System.out.println("X == Y ?");
     System.out.println(x == y);
     System.out.println(x.equals(y));
