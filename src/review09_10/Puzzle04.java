@@ -43,7 +43,7 @@ public class Puzzle04 {
             scores
                 .entrySet()
                 .stream()
-                // .sorted()
+                .sorted()
                 .collect(Collectors.toMap(Entry::getKey, Entry::getValue))
         );
     }
