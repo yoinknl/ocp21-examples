@@ -16,11 +16,11 @@ public class Puzzle05 {
     public static void main(String[] args) {
         List<Integer> intList = List.of(1, 2, 3, 4);
         List<Double> doubleList = List.of(1.5, 2.5, 3.5);
-        
+
         printNumbers(intList);
         printNumbers(doubleList);
     }
-    
+
     public static void printNumbers(List list) {
         list.forEach(System.out::println);
     }
