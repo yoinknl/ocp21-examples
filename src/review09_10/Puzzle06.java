@@ -7,8 +7,8 @@ public class Puzzle06 {
 
     // What is true about the following program? Choose all that apply
     //
-    // A. s = 28
-    // B. s = 34
+    // A. s = 5
+    // B. s = 6
     // C. There are 5 "true" values
     // D. There are 6 "true" values
     // E. There is 1 "false" value
@@ -32,7 +32,7 @@ public class Puzzle06 {
                             Collectors.joining(",")
                         )
                     ),
-                    Collectors.reducing(0, String::length, Integer::sum),
+                    Collectors.reducing(0, s -> 1, Integer::sum),
                     (m, s) -> 
                         "true: " + m.get(true) +
                         " | false: " + m.get(false) +

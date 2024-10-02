@@ -18,22 +18,22 @@ public class Puzzle07 {
     record Animal(String name, int weight) implements Comparable<Animal>, Comparator<Animal> {
         @Override
         public int compareTo(Animal other) {
-            return other.name.compareTo(this.name);
+            return Integer.compare(this.weight(), other.weight());
         }
 
         @Override
-        public int compare(Animal a1, Animal a2) {
-            return Integer.compare(a1.weight, a2.weight);
+        public int compare(Animal a2, Animal a1) {
+            return a1.name().compareTo(a2.name());
         }
 
         @Override
         public final String toString() {
-            return "" + weight;
+            return "" + weight();
         }
     }
 
     public static void main(String[] args) {
-        TreeSet<Animal> a = new TreeSet<>();
+        TreeSet<Animal> a = new TreeSet<>(new Animal("Dog", 30));
         a.add(new Animal("Elephant", 5000));
         a.add(new Animal("Dog", 30));
         a.add(new Animal("Cat", 10));
