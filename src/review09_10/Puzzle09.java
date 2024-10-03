@@ -8,7 +8,7 @@ public class Puzzle09 {
     //
     // A. new TreeSet<>((a, b) -> b - a)
     // B. new TreeSet<>((a, b) -> a - b)
-    // C. new PriorityQueue<>((a, b) -> b - a)
+    // C. new ArrayList<>(3)
     // D. new LinkedHashSet<>()
     // E. new HashSet<>()
     // F. new TreeSet<>(Comparator.reverseOrder())
