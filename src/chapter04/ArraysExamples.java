@@ -31,6 +31,9 @@ public class ArraysExamples {
     java.util.Date[]   dates[]    = new java.util.Date[2][];
     java.util.Date     dates2[][] = new java.util.Date[2][];
 
+    // Please don't do this...
+    java.util.Date[][] []moreDates[] = new java.util.Date[2][][][];
+
 //    int[][] types = new int[];
     int[][] java = new int[][]  { new int[1], new int[2] };
 
@@ -44,8 +47,18 @@ public class ArraysExamples {
     int[] intsA = { 1, 2, 3 };
     int[] intsB = { 1, 2, 3 };
 
+    // New copy of your array, safe for returning
+    Arrays.copyOf(intsA, intsA.length);
+
     System.out.println(intsA.equals(intsB));
     System.out.println(Arrays.equals(intsA, intsB));
+
+    testThisArray(new int[] { 2, 3, 4});
+//    testThisArray({ 2, 3, 4});
+
+  }
+
+  public static void testThisArray(int[] vals) {
 
   }
 
