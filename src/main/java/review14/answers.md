@@ -24,25 +24,6 @@ terminated somehow. The `bytesWritten`-condition is the one that prevents this f
 If you remove the append `true` from the `FileOutputStream`-constructor, the file gets truncated before
 anything can be read from it. This causes the file to empty by the end of the loop.
 
-## Puzzle 03
-
-There will only be one record in the table, since we only called `execute()` once on the INSERT prepared
-statement. The most recently set values on the prepared statement will then be inserted, therefore we will
-see the program print "Age: 14".
-
-The `setSavepoint()` calls here don't actually do anything. They create savepoints, but since we do not
-rollback, they have no influence on the end result.
-
-
-## Puzzle 04
-
-The first error is the setting of the value 4 as the second parameter on the `eligiblePetsPs`. There is
-no second parameter and this piece of code is making it look like you can set two values for the parameter.
-To get the pets of age 3 _and_ 4, we should add `OR age = ?` to the SQL clause to make it work.
-
-The other problem is actually not about JDBC, but about the Date/Time API. We are doing `plusDays(7)`, but
-not saving the result of that call. That is why the checkup is scheduled on TODAY at 10:00.
-
 
 ## Puzzle 05
 

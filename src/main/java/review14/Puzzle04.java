@@ -1,10 +1,10 @@
-package review14_15;
+package review14;
 
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-public class Puzzle06 {
+public class Puzzle04 {
 
   public static void main(String[] args) throws IOException {
 

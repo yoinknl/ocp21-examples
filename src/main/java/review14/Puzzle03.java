@@ -1,9 +1,9 @@
-package review14_15;
+package review14;
 
 import java.io.*;
 import java.nio.file.Files;
 
-public class Puzzle05 {
+public class Puzzle03 {
 
   public static void main(String[] args) throws IOException {
 
