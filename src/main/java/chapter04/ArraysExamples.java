@@ -29,7 +29,9 @@ public class ArraysExamples {
 
     java.util.Date[][] dates0     = new java.util.Date[2][];
     java.util.Date[]   dates[]    = new java.util.Date[2][];
+    java.util.Date[]   []dates1   = new java.util.Date[2][];
     java.util.Date     dates2[][] = new java.util.Date[2][];
+    java.util.Date     []dates3[] = new java.util.Date[2][];
 
     // Please don't do this...
     java.util.Date[][] []moreDates[] = new java.util.Date[2][][][];
