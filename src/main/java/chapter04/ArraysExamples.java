@@ -1,5 +1,6 @@
 package chapter04;
 
+import java.time.LocalTime;
 import java.util.Arrays;
 
 public class ArraysExamples {
@@ -15,7 +16,7 @@ public class ArraysExamples {
     /*
 
      [0] = [ ][ ]
-     [1] = [ ][ ][ ][ ][ ][ ][ ]
+     [1] = [ ][ ][ ][ ][ ][ ][ ][ ]
      [2] = [ ][ ][ ][ ]
      [3] = null
      [4] = null

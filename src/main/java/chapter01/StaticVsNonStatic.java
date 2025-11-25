@@ -4,12 +4,12 @@ public class StaticVsNonStatic {
 
   private static int mijnStaticWaarde = 4;
 
-  private static int myInstanceWaarde = 8;
+  private int myInstanceWaarde = 8;
 
   public static void main(String[] args) {
     System.out.println("Hello World");
     System.out.println("Static int: " + mijnStaticWaarde);
-    System.out.println("Static int: " + myInstanceWaarde);
+//    System.out.println("Static int: " + myInstanceWaarde);
 
     var myInstance = new StaticVsNonStatic();
 

@@ -83,10 +83,29 @@ public class Switches {
         System.out.println("三三ᕕ( ᐛ )ᕗ");
     }
 
+
+
+
   }
 
 
+  public void determineSomethingSomethingNumber(Number number) {
+    String result = switch (number) {
+      case Integer i when i > 0 -> "Int groter dan 0";
+      case Integer i -> "Int kleiner dan of gelijk aan 0";
+      case Float f -> "Float";
+      default -> "Iets anders";
+    };
+  }
 
+
+  public void doWeNeedDefaultWithBoolean(boolean b) {
+
+//    String result = switch (b) {
+//      case true -> "Yay";
+//      case false -> "Nay";
+//    };
+  }
 
 
 }
