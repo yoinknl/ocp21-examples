@@ -7,7 +7,7 @@ import java.awt.event.ActionListener;
 
 public class PrivateClasses {
 
-  private class MyHandler implements ActionListener {
+  private static class MyHandler implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
 
